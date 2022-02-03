@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.box-nav {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: darkred;
+}
+
+.box-nav__logo {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.box-nav__logo__image > img {
+  width: 140px;
+}
+
+.box-nav__logo__text {
+  max-width: 480px;
+  min-width: 220px;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  justify-self: center;
+}
+
+.box-nav__options {
+  min-width: 600px;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 20px;
+}
+.box-nav__options > ul > li {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding:8px 0;
+}
+
+.box-nav__options__text {
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.box-nav__options__text::after {
+  content: "  |";
+}
+
+.box-nav__options__text:hover {
+  color: black;
+}
+
+/* Aqui inicia la cuerpo de la interfaz */
+
+main  {
+  width: 100vw;
+  height: 538px;
+  background-image: url(./../images/fondo_unsaac.jpg);
+}
